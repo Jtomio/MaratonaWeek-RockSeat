@@ -1,0 +1,91 @@
+/* Reset das configuração iniciais */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Inicio de estilização do app */
+
+html {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 10px;
+  height: 100vh;
+  background-color: black;
+}
+.img-moon {
+  display: flex;
+  float: left;
+  margin-left: -70%;
+  padding: 10px;
+  animation: moon-orbit infinite;
+  animation-duration: 10s;
+  width: 100px;
+  height: 100px;
+ 
+}
+.img-cristal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-top: 10%;
+  width: 500px;
+  z-index: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 6em;
+  color: aliceblue;
+  z-index: 1.1;
+}
+p {
+  font-size: 3rem;
+  text-align: left;
+  color: aliceblue;
+}
+input {
+  align-items: center;
+  font-size: 3rem;
+  margin-top: 15px;
+  text-align: left;
+  border-radius: 10px;
+  border-color: blue;
+  box-shadow: 2px 3px lightblue;
+  padding: 3px;
+}
+input:focus {
+  background: lightcyan;
+  box-shadow: 2px 3px blue;
+}
+input:hover {
+  background: lightblue;
+}
+button {
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 3px lightblue;
+  font-size: 3rem;
+  padding: 5px;
+  margin-top: 5%;
+  background: lightcyan;
+  color: blue;
+  margin-left: 40%;
+}
+button:hover {
+  background: lightblue;
+}
+
+@keyframes moon-orbit {
+  100%{transform: rotateZ(360deg);}
+}
