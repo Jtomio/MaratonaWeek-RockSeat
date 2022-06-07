@@ -14,7 +14,8 @@ html {
   font-family: sans-serif;
   font-size: 10px;
   height: 100vh;
-  background-color: black;
+  background-image: url(Img/starsky.jpg);
+  background-size: cover;
 }
 .img-moon {
   display: flex;
@@ -22,10 +23,9 @@ html {
   margin-left: -70%;
   padding: 10px;
   animation: moon-orbit infinite;
-  animation-duration: 10s;
+  animation-duration: 200s;
   width: 100px;
   height: 100px;
- 
 }
 .img-cristal {
   display: flex;
@@ -85,7 +85,26 @@ button {
 button:hover {
   background: lightblue;
 }
-
+.rocketseat{
+    display: flex;
+    position: relative;
+    float: left;
+    margin-left: -60%;
+    margin-top: -100px;
+    animation: rocketdown infinite;
+    animation-duration: 10s ;
+    animation-direction: alternate;
+}
 @keyframes moon-orbit {
-  100%{transform: rotateZ(360deg);}
+  
+  from{
+    transform: translate(-100px);
+  }
+   to {
+    transform: translateX(2220px);
+  }
+}
+@keyframes rocketdown {
+    from{transform: translateY(0px);}
+    to{transform: translateY(-100px);}
 }
