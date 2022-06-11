@@ -127,6 +127,10 @@ body {
   max-width: 400px;
   margin-inline: auto;
 }
+.img-cristal{
+  width: 250px;
+  margin-top: 3%;
+}
 
 h1 {
   margin-top: 40px;
@@ -172,6 +176,17 @@ button:hover {
   animation: rocketdown infinite;
   animation-duration: 10s;
   animation-direction: alternate;
+}
+
+#resposta {
+  margin-top: 30px;
+  transition: opacity 1s;
+}
+#resposta div{
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
 
 /* utlizado media query para configurar a animação da imagem */

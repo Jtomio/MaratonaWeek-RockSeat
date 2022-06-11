@@ -10,7 +10,7 @@
       href="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/skylight.css">
+    <link rel="stylesheet" href="css/skylight.css" />
     <title>Maratona RockSeat</title>
   </head>
   <body>
@@ -27,16 +27,20 @@
     <div class="container">
       <h1>Vou revelar seu destino!</h1>
       <p>Clique em fazer uma pergunta para que seu destino seja revelado</p>
-      <input
+      <input id="inputPergunta"
         type="text"
         name="text"
         id="btnQuestion"
         placeholder="Digite seu texto"
       />
-      <button>Perguntar</button>
+      <button id="buttonPerguntar" onclick="fazerPergunta()">Perguntar</button>
+      <h3 id="resposta"></h3>  
+    </div>  
+    
+    
+    <div class="rocketseat">
+      <img src="img/Maratona Explorer  - 1080x2560.png" alt="" />
     </div>
-      <div class="rocketseat">
-      <img src="img/Maratona Explorer  - 1080x2560.png" alt="">
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
